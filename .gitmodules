@@ -1,0 +1,4 @@
+[submodule "nds-bootloader"]
+	path = nds-bootloader
+	url = https://github.com/devkitPro/nds-bootloader
+	branch = master
