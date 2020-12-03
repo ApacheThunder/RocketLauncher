@@ -42,7 +42,14 @@ If you don't know how to set this up you'll need to use an existing rom Acekard 
 RocketLauncher_Payload.bin:
 The compiled payload before being placed in either the first or second rom of AceKard2i.
 
-CartWhiteListEntries.bin:
+WhiteListDummyEntries_Section1.bin and WhiteListDummyEntries_Section2.bin:
+These contains place holder entries for future support. This would allow adding more RocketLauncher roms intended for other flashcarts.
+This was never used in the end but I kept them here as they are a factor in having the white list file at the correct file size.
+
+WhiteListEntry_Section1.bin and WhiteListEntry_Section2.bin:
+The white list entries for the RocketLauncher rom for sections 1 and 2. These are required else the system won't even bother checking the blacklist entry.
+
+WhiteListEntries_Section3.bin:
 The entire final section in DS Cart White list file (the entire file will not be provided for copyright reasons. Don't want Nintendo's ninjas to come get me. :P )
 The entry for RocketLauncher's rom was added here. The entire section is provided. If you remove/add entries to it you will need to update the offsets used for the RocketLauncher entry as the file size of the DS Cart White list file can cuase the overflow to land at a different ram offset.
 I may have had other custom entries in the white list at the time. You'll probably still need to fix the rom read size info in the RocketLauncher entry to correct it.
